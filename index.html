@@ -523,21 +523,21 @@
                     audio.onended = () => {
                         setTimeout(() => {
                             window.location.href = 'details.html';
-                        }, 1000);
+                        }, 500);
                     };
                     
                     // Fallback redirect if audio doesn't have ended event
                     setTimeout(() => {
                         window.location.href = 'details.html';
-                    }, 2000);
+                    }, 1000);
                 }).catch(error => {
                     console.log('Audio blocked, redirecting anyway');
                     setTimeout(() => {
                         window.location.href = 'details.html';
-                    }, 2000);
+                    }, 1000);
                 });
-            }, 2000);
-        }, 2000);
+            }, 1000);
+        }, 1000);
 
         // Done button handler
         doneBtn.addEventListener('click', () => {
@@ -547,6 +547,7 @@
 </body>
 
 </html>
+
 
 
 
